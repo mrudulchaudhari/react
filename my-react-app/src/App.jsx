@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './card'
-import Button from './button/Button.jsx'
+import Button from './button/button'
 
 function App() {
   return(
