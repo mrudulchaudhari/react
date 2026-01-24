@@ -67,3 +67,14 @@ console.log(x);
 
 const y = function(a, b) {return a *b};
 console.log(y(5, 4));
+
+// Arrow Functions
+let myFunction = (a, b) => a * b;
+
+console.log(myFunction(4, 6));
+
+const addition = (a, b) => {
+    return a + b;
+};
+
+console.log(addition(4, 3));
