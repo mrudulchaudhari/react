@@ -122,3 +122,14 @@ const person3 = {
 };
 
 console.log(person3.fullName());
+
+// Date
+const d = new Date();
+a = d.toDateString();
+console.log(a);
+const c = new Date("2022-03-25");
+console.log(c);
+year = d.getFullYear();
+console.log(year);
+month = d.getMonth();
+console.log(month);
