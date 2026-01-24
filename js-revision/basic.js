@@ -45,3 +45,9 @@ function celsiusToKelvin(celsius){
 console.log(kelvinToCelsius(celsiusToKelvin(15)));
 console.log(celsiusToKelvin(18));
 console.log(kelvinToCelsius(300));
+
+function myAdd(x, y = 10){
+    return x + y;
+}
+console.log(myAdd(14, 13));
+console.log(myAdd(11));
