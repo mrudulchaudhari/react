@@ -26,3 +26,22 @@ function changeContent(id){
     changedC = !changedC;
     
 }
+
+function add(a, b){
+    return a + b;
+}
+
+console.log(add(4, 7));
+console.log(add(3, 11));
+
+function kelvinToCelsius(kelvin){
+    return kelvin - 273;
+}
+
+function celsiusToKelvin(celsius){
+    return celsius + 273;
+}
+
+console.log(kelvinToCelsius(celsiusToKelvin(15)));
+console.log(celsiusToKelvin(18));
+console.log(kelvinToCelsius(300));
