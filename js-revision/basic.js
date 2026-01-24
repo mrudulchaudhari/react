@@ -51,3 +51,19 @@ function myAdd(x, y = 10){
 }
 console.log(myAdd(14, 13));
 console.log(myAdd(11));
+
+//loops
+function sumAll(){
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++){
+        sum+= arguments[i];
+
+    }
+    return sum;
+}
+
+x = sumAll(1, 12, 13, 14, 11);
+console.log(x);
+
+const y = function(a, b) {return a *b};
+console.log(y(5, 4));
