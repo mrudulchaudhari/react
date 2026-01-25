@@ -146,3 +146,30 @@ console.log(addd(4, 5));
 
 const hello = () => console.log("hello");
 hello()
+
+function normal() {
+  console.log(this);
+}
+
+const arrow = () => {
+  console.log(this);
+}
+
+// normal()
+// arrow()
+
+sayHi();
+
+function sayHi() {
+  console.log("hi");
+}
+
+console.log(x1); // undefined
+var x1 = 10;
+
+var x2;
+console.log(x2);
+x2 = 10;
+
+// console.log(a); // ReferenceError
+// let a = 10;
