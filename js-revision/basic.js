@@ -173,3 +173,47 @@ x2 = 10;
 
 // console.log(a); // ReferenceError
 // let a = 10;
+
+// Closure
+// A closure is created when a function remembers variables from its outer lexical scope, 
+// even after that scope has finished execution.
+
+function outer() {
+  let x = 10;
+
+  function inner() {
+    console.log(x);
+  }
+
+  return inner;
+}
+
+const fn = outer();
+fn(); // 10
+console.log(x); // 51, declared above
+
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1000);
+}
+
+// fix 1
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1000);
+}
+
+// fix 2
+for (var i = 0; i < 3; i++) {
+  (function(i) {
+    setTimeout(() => console.log(i), 1000);
+  })(i);
+}
+
+function multiplier(factor) {
+  return x => x * factor;
+}
+
+const double = multiplier(2);
+const triple = multiplier(3);
+
+console.log(double(5)); // 10
+console.log(triple(5)); // 15
