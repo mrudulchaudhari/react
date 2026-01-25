@@ -133,3 +133,16 @@ year = d.getFullYear();
 console.log(year);
 month = d.getMonth();
 console.log(month);
+
+console.log(typeof(10))       // "number"
+console.log(typeof(10.5))      // "number"
+console.log(typeof("hi"))      // "string"
+console.log(typeof(true))      // "boolean"
+console.log(typeof(null))      // "object" ❌ (JS bug)
+console.log(typeof(undefined)) // "undefined"
+
+const addd = (a, b) => a + b;
+console.log(addd(4, 5));
+
+const hello = () => console.log("hello");
+hello()
